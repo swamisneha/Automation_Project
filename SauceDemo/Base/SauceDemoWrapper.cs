@@ -33,7 +33,7 @@ namespace SauceDemo.Base
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
             driver.Url = ("https://www.saucedemo.com/");
         }
-
+        
         [TearDown]
         public void AfterMethod()
         {
