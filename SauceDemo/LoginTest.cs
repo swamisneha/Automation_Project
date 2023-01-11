@@ -20,7 +20,7 @@ namespace SauceDemo
             Assert.That(actualUrl, Is.EqualTo("https://www.saucedemo.com/inventory.html"));
         }
 
-        [Test, TestCaseSource(typeof(DataSaurce), nameof(DataSaurce. InvalidLoginTestData))]
+        [Test, TestCaseSource(typeof(DataSaurce), nameof(DataSaurce. InvalidLoginTestData2))]
         public void InvalidLoginTest(string username, string password, string expectedError)
         {
             LoginPage loginpage = new LoginPage(driver);

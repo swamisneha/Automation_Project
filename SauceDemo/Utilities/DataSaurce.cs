@@ -28,5 +28,10 @@ namespace SauceDemo.Utilities
             return allDataSet;
 
         }
+        public static object[] InvalidLoginTestData2()
+        {
+            object[] data = ExcelUtils.GetSheetIntoObjectArray("C:\\AutomationTraining\\SauceDemo\\SauceDemo\\Test Data\\SwagLabs_data.xlsx", "InvalidLoginTestData");
+            return data;
+        }
     }
 }
